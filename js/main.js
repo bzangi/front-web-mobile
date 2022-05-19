@@ -1,4 +1,4 @@
-const URL_BASE = "http://localhost:3001";
+const URL_BASE = "https://web-mobile.herokuapp.com/";
 
 window.onload = function () {
     readAllStudent();

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'/>
+        <title>Consulta matriculados</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+
+        <form class="form">
+            <p>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name"/>
+            </p>
+            <p>
+                <label for="tia">TIA:</label><br>
+                <input type="text" id="tia"/>
+            </p>
+            <p>
+                <label for="course">Course:</label><br>
+                <input type="text" id="course"/>
+            </p>
+            <button id='button' onclick='insertStudent()' style="border-radius: 4px; background-color: whitesmoke; border: 0;">Inserir Aluno(a)</button>
+        </form>
+        <form class="form">
+            <p>
+                <label for="teacherName">Name:</label><br>
+                <input type="text" id="teacherName"/>
+            </p>
+            <p>
+                <label for="teacherTia">TIA:</label><br>
+                <input type="text" id="teacherTia"/>
+            </p>
+            <p>
+                <label for="disciplines">Disciplinas:</label><br>
+                <input type="text" id="disciplines"/>
+            </p>
+            <button id='button' onclick='insertTeacher()' style="border-radius: 4px; background-color: whitesmoke; border: 0;">Inserir Professor(a)</button>
+        </form>
+
+        <header id="title"></header>
+        <section id='content'></section>
+
+        
+    </body>
+    <footer>
+        <div>
+            <button id='button' onclick="readAllTeacher()">
+                Ver professores
+            </button>
+            <button id='button' onclick="readAllStudent()">
+                Ver alunos
+            </button>
+        </div>
+    </footer>
+</html>
